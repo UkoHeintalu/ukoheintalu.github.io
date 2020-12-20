@@ -1,0 +1,107 @@
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  flex-wrap: wrap;
+}
+
+.lokkilogodiv {
+  display: flex;
+  justify-content: center;
+}
+
+.sissejuhatus {
+  flex-basis: auto;
+}
+
+.sissejuhatusetekst {
+  font-size: 1.5em;
+  font-family: sans-serif;
+  padding: 50px;
+  width: 40%;
+}
+
+.sissejuhatusevideo {
+ width: 60%;
+ padding: 50px;
+}
+
+.lokkilogo {
+  flex-basis: auto;
+  width: 300px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.Ncloth {
+  position: sticky;
+  width: 25%;
+  height: 25%;
+}
+
+body {
+  background-image: url(img/porche.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  flex-basis: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  padding: 5px;
+  list-style: none;
+  display: inline-block;
+}
+
+ul li a {
+  text-decoration: none;
+  font-size: 36px;
+  font-style: Antonio;
+  color: #1e1e1e;
+  padding: 5px 20px;
+  border: 1px solid #1e1e1e;
+  transition: background-color 0.4s ease;
+}
+ul li a:hover {
+  background-color: #fff;
+}
+
+@media only screen and (min-width: 1280px) {
+  .sissejuhatusetekst {
+    font-size: 2.5em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .sissejuhatusetekst, .sissejuhatusevideo {
+    width: 100%;
+  }
+}
